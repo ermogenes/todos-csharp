@@ -6,6 +6,7 @@ while (!sair)
     switch (opcao)
     {
         case "L": ListarTodasAsTarefas(); break;
+        case "P": ListarTarefasPendentes(); break;
         case "I": ListarTarefasPorId(); break;
         case "T": ListarTarefasPorTitulo(); break;
         case "N": IncluirNovaTarefa(); break;
@@ -28,6 +29,11 @@ while (!sair)
 
 void ListarTodasAsTarefas() {
     UI.ExibeDestaque("\n-- Listar todas as Tarefas ---");
+    // Continue daqui
+}
+
+void ListarTarefasPendentes() {
+    UI.ExibeDestaque("\n-- Listar Tarefas Pendentes ---");
     // Continue daqui
 }
 
